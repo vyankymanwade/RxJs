@@ -1,0 +1,26 @@
+
+.card{
+    border: 2px solid rgba(0, 0, 0, 0.176);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.card-title{
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    height: 3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.176);;
+    background-color: rgba(33, 37, 41, 0.03);
+}
+
+.card-body{
+    font-size: 1.6rem;
+    min-height: 5rem;
+    height: fit-content;
+    padding: 1rem;
+}
+
+.not-clickable-card{
+    cursor: default !important;
+}

@@ -1,0 +1,10 @@
+<div>
+    <div class="container">
+        <div *ngFor="let observable of observableList" class="container-items" (click)="onObservableSelection(observable)"> 
+            <div class="card" fxLayout="column" >
+                <div class="card-title">{{observable?.name}}</div>
+                <div class="card-body">{{observable?.explaination }}</div>
+            </div>
+        </div>
+    </div>
+</div>

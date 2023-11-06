@@ -8,6 +8,9 @@ import { ObservableListComponent } from './observable-list/observable-list.compo
 import { FromEventComponent } from './observable-list/from-event/from-event.component';
 import { ListComponent } from './observable-list/list/list.component';
 import { IntervalComponent } from './observable-list/interval/interval.component';
+import { OfAndFromComponent } from './observable-list/of-and-from/of-and-from.component';
+import { ToArrayComponent } from './observable-list/to-array/to-array.component';
+import { CustomObservableComponent } from './observable-list/custom-observable/custom-observable.component';
 
 
 @NgModule({
@@ -17,6 +20,9 @@ import { IntervalComponent } from './observable-list/interval/interval.component
     FromEventComponent,
     ListComponent,
     IntervalComponent,
+    OfAndFromComponent,
+    ToArrayComponent,
+    CustomObservableComponent,
 
   ],
   imports: [

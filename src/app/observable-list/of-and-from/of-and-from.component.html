@@ -1,0 +1,29 @@
+<div fxLayout="row" fxLayoutGap="2.4rem" fxFlexFill>
+    <div class="card not-clickable-card" fxLayout="column" >
+        <div class="card-title">
+            <div class="title-container"> 
+                <span>Of</span>
+            </div>
+        </div>
+        <div class="card-body">
+            <div *ngFor="let video of listOfCourses">
+                <li>{{video}}</li>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="card not-clickable-card" fxLayout="column" >
+        <div class="card-title">
+            <div class="title-container"> 
+                <span>From</span>
+            </div>
+        </div>
+        <div class="card-body">
+            <div *ngFor="let video of listOfCourses">
+                <li>{{video}}</li>
+            </div>
+        </div>
+    </div>
+    
+</div>

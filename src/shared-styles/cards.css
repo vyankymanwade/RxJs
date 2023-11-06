@@ -23,4 +23,6 @@
 
 .not-clickable-card{
     cursor: default !important;
+    min-width: 35rem !important;
+    width: fit-content;
 }

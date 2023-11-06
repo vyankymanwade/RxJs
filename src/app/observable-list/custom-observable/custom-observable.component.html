@@ -1,1 +1,23 @@
-<p>custom-observable works!</p>
+<div fxLayout="row" fxLayoutGap="2.4rem">
+
+    <div>
+        <h2>Normal</h2>
+        <ul *ngFor="let item of list1">
+            <li [ngClass]="getStatusClass('obStatus1')">{{item}}</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Error</h2>
+        <ul *ngFor="let item of list2">
+            <li [ngClass]="getStatusClass('obStatus2')">{{item}}</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Completed</h2>
+        <ul *ngFor="let item of list3">
+            <li [ngClass]="getStatusClass('obStatus3')">{{item}}</li>
+        </ul>
+    </div>
+</div>

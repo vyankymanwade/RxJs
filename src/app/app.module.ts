@@ -11,6 +11,8 @@ import { IntervalComponent } from './observable-list/interval/interval.component
 import { OfAndFromComponent } from './observable-list/of-and-from/of-and-from.component';
 import { ToArrayComponent } from './observable-list/to-array/to-array.component';
 import { CustomObservableComponent } from './observable-list/custom-observable/custom-observable.component';
+import { MapAndFilterComponent } from './observable-list/map-and-filter/map-and-filter.component';
+import { RetryComponent } from './observable-list/retry/retry.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { CustomObservableComponent } from './observable-list/custom-observable/c
     OfAndFromComponent,
     ToArrayComponent,
     CustomObservableComponent,
+    MapAndFilterComponent,
+    RetryComponent,
 
   ],
   imports: [

@@ -2,7 +2,12 @@
 
 @import './shared-styles/cards.css';
 @import './shared-styles/buttons.css'; 
+@import './shared-styles/input.css';
 
 html{
     font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
 }

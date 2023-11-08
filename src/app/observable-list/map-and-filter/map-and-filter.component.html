@@ -1,17 +1,41 @@
-<table>
-    <div class="table-row"> 
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>gender</th>
-        </tr>
+<div fxLayout="row" fxLayoutGap="2.4rem">
+    <div>
+        <h3>Normal Data</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listOfStudents">
+                    <td>{{item?.name}}</td>
+                    <td>{{item?.age}}</td>
+                    <td>{{item.gender}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <div class="table-row">
-        <tr *ngFor="let item of listOfStudents">
-            <td>{{item?.name}}</td>
-            <td>{{item?.age}}</td>
-            <td>{{item.gender}}</td>
-        </tr>
+    <div>
+        <h3>Filtered Data based on gender</h3>
+        <p>data is also mapped to remove age</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of updatedData">
+                    <td>{{item?.name}}</td>
+                    <td>{{item.gender}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-</table>
+</div>

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RetryComponent } from './retry.component';
+import { Comp1Component } from './comp1.component';
 
-describe('RetryComponent', () => {
-  let component: RetryComponent;
-  let fixture: ComponentFixture<RetryComponent>;
+describe('Comp1Component', () => {
+  let component: Comp1Component;
+  let fixture: ComponentFixture<Comp1Component>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [RetryComponent]
+      declarations: [Comp1Component]
     });
-    fixture = TestBed.createComponent(RetryComponent);
+    fixture = TestBed.createComponent(Comp1Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

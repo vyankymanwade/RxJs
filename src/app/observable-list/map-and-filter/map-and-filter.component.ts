@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { from } from 'rxjs';
+import { filter, from, map } from 'rxjs';
 import { Person } from 'src/app/Models/personModel';
 
 
@@ -45,7 +45,13 @@ export class MapAndFilterComponent implements OnInit{
   updatedData:Person[] = [];
 
   ngOnInit(): void {
-      const ob = from(this.listOfStudents).subscribe((data:Person) => {
+      const ob = from(this.listOfStudents)
+      .pipe(filter((data) => data.gender === 'female'),
+        (map((data) => {
+          return {name:data.name,gender:data.gender}
+        }))
+      )
+      .subscribe((data:Person) => {
         this.updatedData.push(data);
       })
   }

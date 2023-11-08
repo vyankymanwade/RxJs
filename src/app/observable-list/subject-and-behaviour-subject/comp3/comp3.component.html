@@ -1,0 +1,14 @@
+<div class="card not-clickable-card" fxLayout="column" >
+    <div class="card-title">
+        <div class="title-container"> 
+            Hello &nbsp;<span>{{userName}}</span>
+
+        </div>
+    </div>
+    <div class="card-body">
+        <div fxLayout="column" fxLayoutGap="2.4rem">
+            <input type="text" class="input-box" placeholder="Type Name here" [(ngModel)]="userName" name="name1">
+            <button class="primary-button medium" (click)="onClick()">Emit</button>
+        </div>
+    </div>
+</div>

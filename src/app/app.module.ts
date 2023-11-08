@@ -12,7 +12,13 @@ import { OfAndFromComponent } from './observable-list/of-and-from/of-and-from.co
 import { ToArrayComponent } from './observable-list/to-array/to-array.component';
 import { CustomObservableComponent } from './observable-list/custom-observable/custom-observable.component';
 import { MapAndFilterComponent } from './observable-list/map-and-filter/map-and-filter.component';
-import { RetryComponent } from './observable-list/retry/retry.component';
+import { DebounceTimeAndDistinctUntilChangedComponent } from './observable-list/debounce-time-and-distinct-until-changed/debounce-time-and-distinct-until-changed.component';
+import { SubjectAndBehaviourSubjectComponent } from './observable-list/subject-and-behaviour-subject/subject-and-behaviour-subject.component';
+import { Comp1Component } from './observable-list/subject-and-behaviour-subject/comp1/comp1.component';
+import { Comp2Component } from './observable-list/subject-and-behaviour-subject/comp2/comp2.component';
+import { Comp3Component } from './observable-list/subject-and-behaviour-subject/comp3/comp3.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -26,12 +32,17 @@ import { RetryComponent } from './observable-list/retry/retry.component';
     ToArrayComponent,
     CustomObservableComponent,
     MapAndFilterComponent,
-    RetryComponent,
+    DebounceTimeAndDistinctUntilChangedComponent,
+    SubjectAndBehaviourSubjectComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
 
     FlexLayoutModule
   ],

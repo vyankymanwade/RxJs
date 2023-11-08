@@ -1,5 +1,5 @@
 export interface Person{
     name:string;
-    age:number;
-    gender?:string;
+    age?:number;
+    gender:string;
 }
